@@ -12,6 +12,14 @@
 
 ## ping-service
 
+Устройство нашего проекта в папке
+```
+./app/
+     /app.py
+     /requirements.txt
+     /Dockerfile
+```
+
 *app.py*
 
 ```
@@ -60,6 +68,14 @@ CMD [ "app.py" ]                        # команда в среде Python3 (
 
 ## pong-service
 
+Устройство нашего проекта в папке
+```
+./app/
+     /app.py
+     /requirements.txt
+     /Dockerfile
+```
+
 *app.py*
 
 ```
@@ -94,6 +110,13 @@ RUN pip install -r requirements.txt     # устанавливаем все не
 ENTRYPOINT [ "python3" ]                # будем использовать среду Python3
 CMD [ "app.py" ]                        # команда в среде Python3 (запуск приложения app.py)
 ```
+Тепереь имея некоторые заготовки для наших будующих образов мы должны их создать и в последствии уж создать на их основе полноценные контейнеры
+```
+docker build
+```
+## Организация общей сети в Docker
+
+Теперь нам необходимо 
 
 
 
