@@ -14,10 +14,11 @@
 
 Устройство нашего проекта в папке
 ```
-./app/
-     /app.py
-     /requirements.txt
-     /Dockerfile
+./ping-pong-service/
+        /ping-service/
+            /app.py
+            /requirements.txt
+            /Dockerfile
 ```
 
 *app.py*
@@ -70,10 +71,11 @@ CMD [ "app.py" ]                        # команда в среде Python3 (
 
 Устройство нашего проекта в папке
 ```
-./app/
-     /app.py
-     /requirements.txt
-     /Dockerfile
+./ping-pong-service/
+        /pong-service/
+            /app.py
+            /requirements.txt
+            /Dockerfile
 ```
 
 *app.py*
@@ -112,11 +114,21 @@ CMD [ "app.py" ]                        # команда в среде Python3 (
 ```
 Тепереь имея некоторые заготовки для наших будующих образов мы должны их создать и в последствии уж создать на их основе полноценные контейнеры
 ```
-docker build
+cd ping-service
+docker build -t ping-container .
+
+cd ..
+
+cd pong-service
+docker build -t pong-container .
 ```
 ## Организация общей сети в Docker
 
-Теперь нам необходимо 
+Теперь нам необходимо создать контейнеры на основе наших уже созданных образов, открыв соответсвующие порты *ping = 5000*, *pong = 5001*
+
+```
+
+```
 
 
 
