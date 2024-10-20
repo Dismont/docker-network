@@ -186,7 +186,7 @@ def do_ping():
 2024-10-20 12:00:01  * Debugger is active!
 2024-10-20 12:00:01  * Debugger PIN: 978-957-277
 ```
-Итог нашего проекта ![по ссылке](http://localhost:5000/ping)
+Итог нашего проекта по данной ссылке: http://localhost:5000/ping
 
 ```
 Ping ... Pong
